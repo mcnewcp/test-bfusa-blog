@@ -343,7 +343,7 @@ plt.show()
 
 
     
-![histograms](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_12_0.png)
+![histograms]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_12_0.png)
     
 
 
@@ -377,7 +377,7 @@ plt.show()
 
 
     
-![income category](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_16_0.png)
+![income category]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_16_0.png)
     
 
 
@@ -433,7 +433,7 @@ plt.show()
 
 
     
-![mapped locations](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_20_0.png)
+![mapped locations]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_20_0.png)
     
 
 
@@ -447,7 +447,7 @@ plt.show()
 
 
     
-![cluster map](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_22_0.png)
+![cluster map]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_22_0.png)
     
 
 
@@ -467,7 +467,7 @@ plt.show()
 
 
     
-![final map](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_24_0.png)
+![final map]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_24_0.png)
     
 
 
@@ -513,7 +513,7 @@ plt.show()
 
 
     
-![biplots](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_28_0.png)
+![biplots]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_28_0.png)
     
 
 
@@ -526,7 +526,7 @@ plt.show()
 
 
     
-![biplot](/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_29_0.png)
+![biplot]({{ site.baseurl }}/assets/2021-09-09-end-to-end-ml-project_files/2021-09-09-end-to-end-ml-project_29_0.png)
     
 
 
