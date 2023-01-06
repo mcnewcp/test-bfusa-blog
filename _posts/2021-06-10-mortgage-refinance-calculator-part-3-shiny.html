@@ -2,7 +2,7 @@
 layout: page
 title: 'Mortgage Refinance Calculator Part 3: Shiny'
 author: Coy McNew
-date: '2021-06-20 09:00:00'
+date: '2021-06-10 09:00:00'
 ---
 <!DOCTYPE html>
 
@@ -232,7 +232,7 @@ date: '2021-06-20 09:00:00'
 <body>
   <div class="container-fluid main-container">
     <p><img
-        src="/assets/2021-06-10-mortgage-refinance-calculator-part-3-shiny_files/mortgage-refinance_2021-06-10.gif" />
+        src="{{ site.baseurl }}/assets/2021-06-10-mortgage-refinance-calculator-part-3-shiny_files/mortgage-refinance_2021-06-10.gif" />
     </p>
     <div id="objective" class="section level1">
       <h1>Objective</h1>
@@ -248,8 +248,10 @@ date: '2021-06-20 09:00:00'
         <li>Convince my wife that it was time to refinance our home.</li>
       </ol>
       <p>I covered the calculations in <a
-          href="{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">Part 1</a>
-        and the visuals in <a href="{% post_url 2021-06-09-mortgage-refinance-calculator-part-2-visuals %}">Part 2</a>,
+          href="{{ site.baseurl }}{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">Part
+          1</a>
+        and the visuals in <a
+          href="{{ site.baseurl }}{% post_url 2021-06-09-mortgage-refinance-calculator-part-2-visuals %}">Part 2</a>,
         so
         I’ll wrap up this tool here by covering how I’m packaging this up into a Shiny app.</p>
     </div>
@@ -274,7 +276,8 @@ date: '2021-06-20 09:00:00'
         It takes in principal, interest rate, loan term, start date, additional up front costs, and any initialized
         principal or interest already paid (only in the case of refinance calculations). It returns the summary
         dataframe needed for visuals. Since I covered these calculations in <a
-          href="{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">Part 1</a>,
+          href="{{ site.baseurl }}{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">Part
+          1</a>,
         I won’t go over them here, and instead I’ll just copy the function below for reference.</p>
       <pre class="r"><code>#function for calculating amortization
 my_amort &lt;- function(
@@ -368,7 +371,7 @@ my_amort &lt;- function(
         points. I’m accessing the user input on the UI side by using <code>input.var</code>. This makes the condition
         for the conditional panel <code>input.points_yn == &#39;Yes&#39;</code>.</p>
       <p><img
-          src="/assets/2021-06-10-mortgage-refinance-calculator-part-3-shiny_files/mortgage-refinance-conditionalPanel_2021-06-10.gif" />
+          src="{{ site.baseurl }}/assets/2021-06-10-mortgage-refinance-calculator-part-3-shiny_files/mortgage-refinance-conditionalPanel_2021-06-10.gif" />
       </p>
       <p>Second, I’m using <code>uiOutput()</code> to display a dynamic piece of html text. I’ve never used this before
         but I found it pretty cool. In the server script I’m generating a text summary of the difference between monthly
@@ -379,8 +382,9 @@ my_amort &lt;- function(
       <h1>server.R</h1>
       <p>The server script does most of the heavy lifting for the app, as it generates all outputs as the dynamically
         user defined inputs change. Most of what I’m doing in the server script is relatively straightforward and
-        covered in Parts <a href="{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">1</a> and
-        <a href="{% post_url 2021-06-09-mortgage-refinance-calculator-part-2-visuals %}">2</a> so I’m
+        covered in Parts <a
+          href="{{ site.baseurl }}{% post_url 2021-06-08-mortgage-refinance-calculator-part-1-calculations %}">1</a> and
+        <a href="{{ site.baseurl }}{% post_url 2021-06-09-mortgage-refinance-calculator-part-2-visuals %}">2</a> so I’m
         not going to include the majority of the code here. I’m just going to point the interesting bits. To see the
         server script in it’s entirety, visit my <a
           href="https://github.com/mcnewcp/shiny-mortgage-refinance/blob/master/mortgage-refinance/server.R">github</a>.
