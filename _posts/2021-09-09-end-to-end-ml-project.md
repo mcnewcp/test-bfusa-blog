@@ -3,13 +3,6 @@ layout: post
 title: End-to-End Machine Learning Project
 author: Coy McNew
 date: '2021-09-09 09:00:00'
-slug: end-to-end-ml-project
-categories:
-  - Hands on ML by Geron
-  - python
-tags:
-  - python
-  - machine learning
 ---
 # Purpose
 
